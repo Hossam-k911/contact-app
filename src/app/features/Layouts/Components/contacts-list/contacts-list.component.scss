@@ -1,0 +1,131 @@
+.main-container {
+  height: 100vh;
+  background-image: url("/assets/Pics/telephone.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts-container {
+  //   width: 72.75rem;
+  //   height: 41.688rem;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Hi Nadia :: trying to be a good student and use media Queries for responsive 👀
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .form-control {
+    width: 43.125rem;
+    height: 2.8125rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+  .contacts-container {
+    width: 55.75rem;
+    height: 40rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .contacts-container {
+    width: 72.75rem;
+    height: 41.6875rem;
+  }
+  .form-control {
+    width: 59.125rem;
+    height: 2.8125rem;
+  }
+}
+
+.form-control {
+  //   width: 59.125rem;
+  //   height: 2.8125rem;
+  border-radius: 1.5625rem;
+  background: #fff;
+}
+.add-btn {
+  width: 13.5625rem;
+  height: 3.8125rem;
+  color: #fff;
+  //   font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #1bb0f0;
+  border-radius: 25px;
+}
+
+.contact-img {
+  width: 6.8125rem;
+  height: 6.625rem;
+  margin-left: 6rem;
+  border-radius: 6.8125rem;
+}
+
+.contact-info {
+  color: #fff;
+  margin-left: 3rem;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-number {
+  @extend .contact-info;
+  color: #d9d9d9;
+  padding-top: 2rem;
+}
+.contants-action {
+  width: 3.375rem;
+  height: 2.8125rem;
+  margin-right: 3rem;
+  background-color: white;
+}
+
+.contacts-holder {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 22rem;
+  scrollbar-width: none;
+}
+.contacts-holder::-webkit-scrollbar {
+  display: none;
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 1.41rem;
+  padding-right: 4rem;
+}
+.pagination-btn {
+  background: unset;
+  border: 0px;
+}
+
+.contact-dialog {
+  // width: 75.25rem;
+  // height: 35.6875rem;
+  background-color: white;
+}

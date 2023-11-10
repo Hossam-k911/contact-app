@@ -1,0 +1,79 @@
+<!-- <h2 mat-dialog-title>Install Angular</h2> -->
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="contactForm">
+    <div class="row">
+      <div class="col-12">
+        <div class="contact-img">
+          <label for="contactImg">
+            <img [src]="imageSrc ? imageSrc : '/assets/Pics/profile-pic.png'" />
+            <input
+              formControlName="picture"
+              type="file"
+              id="contactImg"
+              (change)="uploadPhoto($event)"
+            />
+          </label>
+
+          <span>Upload Photo</span>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex" style="gap: 1rem">
+        <div class="col-6">
+          <input
+            type="text"
+            formControlName="firstName"
+            class="form-control"
+            placeholder="First Name"
+            mat-input
+          />
+        </div>
+        <div class="col-6">
+          <input
+            type="text"
+            formControlName="lastName"
+            class="form-control"
+            placeholder="Last Name"
+            mat-input
+          />
+        </div>
+      </div>
+      <div class="col-12 d-flex gapping-divs" style="gap: 1rem">
+        <div class="col-6">
+          <input
+            type="number"
+            formControlName="phone"
+            class="form-control"
+            placeholder="Phone Number"
+            mat-input
+          />
+        </div>
+        <div class="col-6">
+          <input
+            type="email"
+            formControlName="email"
+            class="form-control"
+            placeholder="Email"
+            mat-input
+          />
+        </div>
+      </div>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button
+    type="button"
+    cdkFocusInitial
+    [mat-dialog-close]="true"
+    class="btn cancel-btn"
+    mat-dialog-close
+  >
+    Cancel
+  </button>
+  <button type="button" class="btn save-btn" (click)="addContact()">
+    Save
+  </button>
+</mat-dialog-actions>
+
+<app-loader></app-loader>

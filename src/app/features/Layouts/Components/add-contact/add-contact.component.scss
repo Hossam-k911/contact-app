@@ -1,0 +1,104 @@
+@media only screen and (min-width: 1280px) {
+  .mat-typography {
+    width: 63.25rem !important;
+    height: 35.6875rem;
+    background-color: white;
+    overflow: hidden;
+
+    .form-control {
+      width: 29.75rem;
+      height: 3.5rem;
+    }
+
+    .contact-img {
+      margin-bottom: 1.75rem;
+    }
+
+    .gapping-divs {
+      margin-top: 1.75rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .gapping-divs {
+    margin-top: 3.75rem;
+  }
+}
+
+.save-btn {
+  width: 13.5625rem;
+  height: 3.8125rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #1bb0f0;
+  border-radius: 25px;
+}
+
+.cancel-btn {
+  width: 13.5625rem;
+  height: 3.8125rem;
+  color: black;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+.contact-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.75rem;
+  flex-flow: column;
+  input {
+    display: none;
+  }
+  img {
+    width: 6.8125rem;
+    height: 6.625rem;
+    border-radius: 6.8125rem;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+  span {
+    color: #000;
+    margin-top: 2rem;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.mat-typography {
+  width: 75.25rem;
+  height: 35.6875rem;
+  background-color: white;
+}
+.form-control {
+  color: black;
+  margin-top: 2rem;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  width: 35.75rem;
+  height: 3.5rem;
+  border-radius: 1.5625rem;
+  background: #d3d0d0;
+}
+mat-dialog-actions {
+  justify-content: space-between;
+}
+.gapping-divs {
+  margin-top: 3.75rem;
+}

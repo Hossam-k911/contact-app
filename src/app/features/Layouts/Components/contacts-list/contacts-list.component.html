@@ -1,0 +1,66 @@
+<div class="main-container">
+  <div class="container h-100">
+    <div class="contacts-container">
+      <div class="row">
+        <div class="col-12 mt-4 d-flex justify-content-center">
+          <form [formGroup]="searchForm">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search by Name"
+              formControlName="searchedName"
+              (keyup)="searchByname()"
+            />
+          </form>
+        </div>
+
+        <div class="col-12 d-flex justify-content-end p-5">
+          <button class="btn add-btn" type="button" (click)="openDialog()">
+            <i class="fas fa-plus"></i>
+            Add New Contact
+          </button>
+        </div>
+
+        <div class="contacts-holder">
+          <div
+            class="col-12 d-flex"
+            style="margin-bottom: 140px"
+            *ngFor="let user of contactList"
+          >
+            <div class="col-6">
+              <div class="d-flex">
+                <img class="contact-img" src="{{ user.picture }}" />
+                <div class="d-grid">
+                  <span class="contact-info">
+                    {{ user.firstName }} {{ user.lastName }}</span
+                  >
+                  <span class="contact-number">01020092195</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <button class="btn contants-action" (click)="editContact(user)">
+                <i class="fas fa-edit" style="color: #1bb0f0"></i>
+              </button>
+              <button class="btn contants-action" (click)="deleteContact(user)">
+                <i class="fas fa-trash-alt" style="color: #f51000"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pagination-container">
+          <button type="button" class="pagination-btn" (click)="onCBackPage()">
+            <img src="../../../../../assets/Pics/left-btn.png" />
+          </button>
+          <!-- <div class="_pagination__container-page-info_1tvd7_9">2/5</div> -->
+
+          <button class="pagination-btn" type="button" (click)="onNextPage()">
+            <img src="../../../../../assets/Pics/right-btn.png" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-loader></app-loader>
